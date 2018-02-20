@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "1.1.4.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -99,8 +100,9 @@ int main(int argc, char * argv[]) {
     }
 
 //1.1.4 Accountクラスを作成し、インターンの参加者の一覧をコンソールにログを出力する。(NSLog)
-
-        
+        Account *inTurn=[[Account alloc]init];
+        [inTurn method_log:@"太郎" age:15 sex:@"men" language:@"英語"];
+        [inTurn method_log:@"花子" age:18 sex:@"women" language:@"韓国語"];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

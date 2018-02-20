@@ -10,17 +10,18 @@
 #define __1_3_h
 
 #import <Foundation/Foundation.h>
-#import <stdio.h>
 
+//クラス宣言
 @interface Account:NSObject{
-    @private
+//インスタンス変数(プロパティ)宣言
+@private
     NSString *name;
     NSInteger age;
     NSString *sex;
     NSString *language;
-    NSString *aaa;
 }
--(void)method_log;
+//メソッド宣言
+-(void)method_log:(NSString*)name age:(NSInteger)age sex:(NSString*)sex language:(NSString*)language;
 @end
 
 #endif /* __1_3_h */
