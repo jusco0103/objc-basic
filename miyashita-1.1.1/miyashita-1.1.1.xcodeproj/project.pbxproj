@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A944DF79203BF70B00EA4154 /* 1.1.4.m in Sources */ = {isa = PBXBuildFile; fileRef = A944DF78203BF70B00EA4154 /* 1.1.4.m */; };
 		A9FC098E203AA33000E895EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC098D203AA33000E895EE /* AppDelegate.m */; };
 		A9FC0991203AA33000E895EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC0990203AA33000E895EE /* ViewController.m */; };
 		A9FC0994203AA33000E895EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FC0992203AA33000E895EE /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A944DF77203BDF6300EA4154 /* 1.1.4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 1.1.4.h; sourceTree = "<group>"; };
+		A944DF78203BF70B00EA4154 /* 1.1.4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 1.1.4.m; sourceTree = "<group>"; };
 		A9FC0989203AA33000E895EE /* miyashita-1.1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miyashita-1.1.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FC098C203AA33000E895EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9FC098D203AA33000E895EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				A9FC0997203AA33000E895EE /* LaunchScreen.storyboard */,
 				A9FC099A203AA33000E895EE /* Info.plist */,
 				A9FC099B203AA33000E895EE /* main.m */,
+				A944DF77203BDF6300EA4154 /* 1.1.4.h */,
+				A944DF78203BF70B00EA4154 /* 1.1.4.m */,
 			);
 			path = "miyashita-1.1.1";
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A944DF79203BF70B00EA4154 /* 1.1.4.m in Sources */,
 				A9FC0991203AA33000E895EE /* ViewController.m in Sources */,
 				A9FC099C203AA33000E895EE /* main.m in Sources */,
 				A9FC098E203AA33000E895EE /* AppDelegate.m in Sources */,
