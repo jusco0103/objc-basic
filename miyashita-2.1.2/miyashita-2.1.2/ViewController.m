@@ -10,14 +10,15 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *img;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-UIImage* image = [UIImage imageNamed:@"Image"];
-
+    
+    self.img.image = [UIImage imageNamed:@"tamago"];
 }
 
 
