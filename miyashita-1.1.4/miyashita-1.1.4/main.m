@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "1.1.4.h"
+#import "Account.h"
 
 int main(int argc, const char * argv[]) {
     
 //オブジェクトinTurnの初期化
-    Account *inTurn=[[Account alloc]init];
+Account *inTurn=[[Account alloc]init];
+    inTurn.name=@"Takeshi";
+    inTurn.age=18;
+    inTurn.sex=@"men";
+    inTurn.language=@"English";
     
-    //メソッドに引数の受け渡し
-    [inTurn method_log:@"太郎" age:15 sex:@"men" language:@"英語"];
-    [inTurn method_log:@"花子" age:18 sex:@"women" language:@"韓国語"];
-    
+    [inTurn method_log];
+
     return 0;
 }

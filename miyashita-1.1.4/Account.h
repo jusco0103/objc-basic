@@ -5,8 +5,6 @@
 //  Created by 宮下良介 on 2018/02/21.
 //  Copyright © 2018年 Ryosuke_Miyashita. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
 //Accountクラスを作成し、インターンの参加者の一覧をコンソールにログを出力する。(NSLog)
 //Accountクラスには、下記のプロパティとメソッドを定義する。
 //【プロパティ】
@@ -15,17 +13,20 @@
 //男性の場合、「○○君は、○○が得意な○○歳です。」と表示する
 //女性の場合、「○○さんは、○○が得意な○○歳です。」と表示する。
 
+#import <Foundation/Foundation.h>
+
 //クラスAccountを宣言
 @interface Account : NSObject{
-
-//インスタンス変数(プロパティ)宣言
-@private
-NSString *name;
-NSInteger age;
-NSString *sex;
-NSString *language;
+    
 }
+
+//インスタンス変数(プロパティ)の定義
+@property(readwrite)NSString *name;
+@property(readwrite)NSInteger age;
+@property(readwrite)NSString *sex;
+@property(readwrite)NSString *language;
+
 //メソッド宣言
--(void)method_log:(NSString*)name age:(NSInteger)age sex:(NSString*)sex language:(NSString*)language;
+-(void)method_log;
 
 @end

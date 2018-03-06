@@ -9,19 +9,16 @@
 #import "Account.h"
 
 //メソッドの実装
-@implementation Account
--(void)method_log:(NSString*)name
-              age:(NSInteger)age
-              sex:(NSString*)sex
-         language:(NSString*)language;{
 
-    //処理（もし変数sexが"men"の場合はコンソール◯◯君〜表示、"women"の場合はコンソール◯◯さん〜表示）
-    if([sex isEqual:@"men"]){
-        NSLog(@"%@君は、%@が得意な%ld歳です。",name,language,(long)age);
+@implementation Account
+
+- (void)method_log{
+    
+    if([_sex isEqual:@"men"]){
+        NSLog(@"%@君は、%@が得意な%ld歳です。",_name,_language,(long)_age);
     }
-    else if([sex isEqual:@"women"]){
-        NSLog(@"%@さんは、%@が得意な%ld歳です。",name,language,(long)age);
-    }
+    
 }
+
 
 @end
