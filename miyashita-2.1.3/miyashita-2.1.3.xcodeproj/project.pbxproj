@@ -12,7 +12,7 @@
 		A96753CD20411A8A003244C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96753CB20411A8A003244C1 /* Main.storyboard */; };
 		A96753D220411A8A003244C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96753D020411A8A003244C1 /* LaunchScreen.storyboard */; };
 		A96753D520411A8A003244C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96753D420411A8A003244C1 /* main.m */; };
-		A987CE89204511B200670E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A987CE88204511B200670E40 /* Assets.xcassets */; };
+		A99C418E204FC6170047D5F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99C418D204FC6170047D5F3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A96753D120411A8A003244C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A96753D320411A8A003244C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A96753D420411A8A003244C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A987CE88204511B200670E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		A99C418D204FC6170047D5F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		A96753C420411A89003244C1 /* miyashita-2.1.3 */ = {
 			isa = PBXGroup;
 			children = (
-				A987CE88204511B200670E40 /* Assets.xcassets */,
+				A99C418D204FC6170047D5F3 /* Assets.xcassets */,
 				A96753C520411A89003244C1 /* AppDelegate.h */,
 				A96753C620411A89003244C1 /* AppDelegate.m */,
 				A96753C820411A89003244C1 /* ViewController.h */,
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96753D220411A8A003244C1 /* LaunchScreen.storyboard in Resources */,
-				A987CE89204511B200670E40 /* Assets.xcassets in Resources */,
+				A99C418E204FC6170047D5F3 /* Assets.xcassets in Resources */,
 				A96753CD20411A8A003244C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
