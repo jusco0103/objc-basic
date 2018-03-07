@@ -16,12 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UILabel *label = [[UILabel alloc] init];
-    label.text = NSLocalizedString(@"スタート", nil);
-    [label sizeToFit];
-    label.center = self.view.center;
-    [self.view addSubview:label];
+    _labeeel.text = NSLocalizedString(@"スタート", nil);
+    [_labeeel sizeToFit];
+    _labeeel.center = self.view.center;
+    [self.view addSubview:_labeeel];
 }
 
 
