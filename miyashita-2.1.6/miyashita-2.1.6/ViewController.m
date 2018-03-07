@@ -37,6 +37,20 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
 }
 
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    if(error.code==-1009){
+        UIAlertController *offlineac=[UIAlertController alertControllerWithTitle:@"Error" message:@"エラーコード：1099\nインターネットに接続されていません。\n正しくインターネットに\n接続されているか、確認してください。" preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        [offlineac addAction:[UIAlertAction actionWithTitle:@"OK"
+                                                      style:UIAlertActionStyleDefault
+                                                    handler:^(UIAlertAction * action){
+                                                        NSLog(@"-1099");
+                                                    }]];
+        [self presentViewController:offlineac animated:YES completion:nil];
+        
+        }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
