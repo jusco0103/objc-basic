@@ -16,17 +16,20 @@
 #import <Foundation/Foundation.h>
 
 //クラスAccountを宣言
-@interface Account : NSObject{
-    
-}
+@interface Account : NSObject
+
+    @property NSString *name;
+    @property NSInteger age;
+    @property NSString *sex;
+    @property NSString *language;
+
+
+-(id)initWithName:(NSString*)name
+              age:(NSInteger)age
+              sex:(NSString*)sex
+         language:(NSString*)language;
 
 //インスタンス変数(プロパティ)の定義
-@property(readwrite)NSString *name;
-@property(readwrite)NSInteger age;
-@property(readwrite)NSString *sex;
-@property(readwrite)NSString *language;
 
-//メソッド宣言
--(void)method_log;
 
 @end

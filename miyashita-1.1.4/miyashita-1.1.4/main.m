@@ -10,15 +10,12 @@
 #import "Account.h"
 
 int main(int argc, const char * argv[]) {
-    
-//オブジェクトinTurnの初期化
-Account *inTurn=[[Account alloc]init];
-    inTurn.name=@"Takeshi";
-    inTurn.age=18;
-    inTurn.sex=@"men";
-    inTurn.language=@"English";
-    
-    [inTurn method_log];
 
-    return 0;
+//オブジェクトinTurnの初期化（インスタンスの生成）
+    
+    Account *Taro=[[Account alloc]initWithName:@"Taro" age:18 sex:@"men" language:@"English"];
+    Account *Keiko=[[Account alloc]initWithName:@"Keiko" age:14 sex:@"men" language:@"Korean"];
+    
+    NSLog(@"%@君は、%@が得意な%ld歳です。",Taro.name,Taro.language,(long)Taro.age);
+    NSLog(@"%@さんは、%@が得意な%ld歳です。",Keiko.name,Keiko.language,(long)Keiko.age);
 }

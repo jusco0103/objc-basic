@@ -9,16 +9,22 @@
 #import "Account.h"
 
 //メソッドの実装
-
 @implementation Account
 
-- (void)method_log{
-    
-    if([_sex isEqual:@"men"]){
-        NSLog(@"%@君は、%@が得意な%ld歳です。",_name,_language,(long)_age);
+-(id)initWithName:(NSString*)name
+              age:(NSInteger)age
+              sex:(NSString*)sex
+         language:(NSString*)language{
+    if( self = [super init] )
+    {
+        self.name = name;
+        self.age = age;
+        self.sex = sex;
+        self.language = landguage;
     }
-    
+
+    return self;
 }
-
-
 @end
+
+
