@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A97FD38A20526E20009ADC98 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A97FD38D20526E21009ADC98 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				A97FD38E20526E32009ADC98 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A9C3596920511379004363B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C3596820511379004363B4 /* AppDelegate.m */; };
 		A9C3596C20511379004363B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C3596B20511379004363B4 /* ViewController.m */; };
@@ -103,6 +117,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Ryosuke_Miyashita;
 				TargetAttributes = {
+					A97FD38A20526E20009ADC98 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					A9C3596320511379004363B4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -123,6 +141,7 @@
 			projectRoot = "";
 			targets = (
 				A9C3596320511379004363B4 /* miyashita-2.1.10 */,
+				A97FD38A20526E20009ADC98 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +159,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A97FD38E20526E32009ADC98 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PROJECT=miyashita-2.1.10\nSCHEME=${PROJECT}\n\nXCTOOL=/usr/local/bin\nexport PATH=$XCTOOL:$PATH\nOCLINT_HOME=/usr/local/oclint-0.13\nexport PATH=$OCLINT_HOME/bin:$PATH\n\nxctool -project ${SRCROOT}/${PROJECT}.xcodeproj -scheme ${SCHEME} -reporter json-compilation-database:compile_commands.json clean\nxctool -project ${SRCROOT}/${PROJECT}.xcodeproj -scheme ${SCHEME} -reporter json-compilation-database:compile_commands.json build\n\noclint-json-compilation-database | sed 's/\\(.*\\.\\m\\{1,2\\}:[0-9]*:[0-9]*:\\)/\\1 warning:/'";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9C3596020511379004363B4 /* Sources */ = {
@@ -174,6 +209,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A97FD38B20526E21009ADC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLWT47KH8L;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A97FD38C20526E21009ADC98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLWT47KH8L;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A9C3597820511379004363B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,6 +362,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A97FD38D20526E21009ADC98 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97FD38B20526E21009ADC98 /* Debug */,
+				A97FD38C20526E21009ADC98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9C3595F20511379004363B4 /* Build configuration list for PBXProject "miyashita-2.1.10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
