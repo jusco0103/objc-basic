@@ -6,46 +6,35 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		A97FD38A20526E20009ADC98 /* OCLint */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A97FD38D20526E21009ADC98 /* Build configuration list for PBXAggregateTarget "OCLint" */;
-			buildPhases = (
-				A97FD38E20526E32009ADC98 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = OCLint;
-			productName = OCLint;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		A9C3596920511379004363B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C3596820511379004363B4 /* AppDelegate.m */; };
-		A9C3596C20511379004363B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C3596B20511379004363B4 /* ViewController.m */; };
-		A9C3596F20511379004363B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3596D20511379004363B4 /* Main.storyboard */; };
-		A9C3597120511379004363B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C3597020511379004363B4 /* Assets.xcassets */; };
-		A9C3597420511379004363B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C3597220511379004363B4 /* LaunchScreen.storyboard */; };
-		A9C3597720511379004363B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C3597620511379004363B4 /* main.m */; };
-		A9C35983205134E3004363B4 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9C35982205134E3004363B4 /* Property List.plist */; };
+		A9571FF320565F79005E8F16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9571FF220565F79005E8F16 /* AppDelegate.m */; };
+		A9571FF620565F79005E8F16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9571FF520565F79005E8F16 /* ViewController.m */; };
+		A9571FF920565F79005E8F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9571FF720565F79005E8F16 /* Main.storyboard */; };
+		A9571FFB20565F79005E8F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9571FFA20565F79005E8F16 /* Assets.xcassets */; };
+		A9571FFE20565F79005E8F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9571FFC20565F79005E8F16 /* LaunchScreen.storyboard */; };
+		A957200120565F79005E8F16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A957200020565F79005E8F16 /* main.m */; };
+		A95720092056605E005E8F16 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A95720082056605E005E8F16 /* CustomTableViewCell.m */; };
+		A957200B205663BD005E8F16 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = A957200A205663BD005E8F16 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A9C3596420511379004363B4 /* miyashita-2.1.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miyashita-2.1.10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C3596720511379004363B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A9C3596820511379004363B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9C3596A20511379004363B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9C3596B20511379004363B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A9C3596E20511379004363B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A9C3597020511379004363B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9C3597320511379004363B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A9C3597520511379004363B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9C3597620511379004363B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9C35982205134E3004363B4 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		A9571FEE20565F79005E8F16 /* miyashita-2.1.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miyashita-2.1.10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9571FF120565F79005E8F16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9571FF220565F79005E8F16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9571FF420565F79005E8F16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9571FF520565F79005E8F16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9571FF820565F79005E8F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9571FFA20565F79005E8F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9571FFD20565F79005E8F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9571FFF20565F79005E8F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A957200020565F79005E8F16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A95720072056605E005E8F16 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		A95720082056605E005E8F16 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		A957200A205663BD005E8F16 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A9C3596120511379004363B4 /* Frameworks */ = {
+		A9571FEB20565F79005E8F16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,35 +44,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9C3595B20511379004363B4 = {
+		A9571FE520565F79005E8F16 = {
 			isa = PBXGroup;
 			children = (
-				A9C3596620511379004363B4 /* miyashita-2.1.10 */,
-				A9C3596520511379004363B4 /* Products */,
+				A9571FF020565F79005E8F16 /* miyashita-2.1.10 */,
+				A9571FEF20565F79005E8F16 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A9C3596520511379004363B4 /* Products */ = {
+		A9571FEF20565F79005E8F16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9C3596420511379004363B4 /* miyashita-2.1.10.app */,
+				A9571FEE20565F79005E8F16 /* miyashita-2.1.10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A9C3596620511379004363B4 /* miyashita-2.1.10 */ = {
+		A9571FF020565F79005E8F16 /* miyashita-2.1.10 */ = {
 			isa = PBXGroup;
 			children = (
-				A9C3596720511379004363B4 /* AppDelegate.h */,
-				A9C3596820511379004363B4 /* AppDelegate.m */,
-				A9C3596A20511379004363B4 /* ViewController.h */,
-				A9C3596B20511379004363B4 /* ViewController.m */,
-				A9C3596D20511379004363B4 /* Main.storyboard */,
-				A9C3597020511379004363B4 /* Assets.xcassets */,
-				A9C3597220511379004363B4 /* LaunchScreen.storyboard */,
-				A9C3597520511379004363B4 /* Info.plist */,
-				A9C35982205134E3004363B4 /* Property List.plist */,
-				A9C3597620511379004363B4 /* main.m */,
+				A9571FF120565F79005E8F16 /* AppDelegate.h */,
+				A9571FF220565F79005E8F16 /* AppDelegate.m */,
+				A9571FF420565F79005E8F16 /* ViewController.h */,
+				A9571FF520565F79005E8F16 /* ViewController.m */,
+				A9571FF720565F79005E8F16 /* Main.storyboard */,
+				A95720072056605E005E8F16 /* CustomTableViewCell.h */,
+				A95720082056605E005E8F16 /* CustomTableViewCell.m */,
+				A9571FFA20565F79005E8F16 /* Assets.xcassets */,
+				A9571FFC20565F79005E8F16 /* LaunchScreen.storyboard */,
+				A957200A205663BD005E8F16 /* Property List.plist */,
+				A9571FFF20565F79005E8F16 /* Info.plist */,
+				A957200020565F79005E8F16 /* main.m */,
 			);
 			path = "miyashita-2.1.10";
 			sourceTree = "<group>";
@@ -91,13 +82,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9C3596320511379004363B4 /* miyashita-2.1.10 */ = {
+		A9571FED20565F79005E8F16 /* miyashita-2.1.10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9C3597A20511379004363B4 /* Build configuration list for PBXNativeTarget "miyashita-2.1.10" */;
+			buildConfigurationList = A957200420565F79005E8F16 /* Build configuration list for PBXNativeTarget "miyashita-2.1.10" */;
 			buildPhases = (
-				A9C3596020511379004363B4 /* Sources */,
-				A9C3596120511379004363B4 /* Frameworks */,
-				A9C3596220511379004363B4 /* Resources */,
+				A9571FEA20565F79005E8F16 /* Sources */,
+				A9571FEB20565F79005E8F16 /* Frameworks */,
+				A9571FEC20565F79005E8F16 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -105,29 +96,25 @@
 			);
 			name = "miyashita-2.1.10";
 			productName = "miyashita-2.1.10";
-			productReference = A9C3596420511379004363B4 /* miyashita-2.1.10.app */;
+			productReference = A9571FEE20565F79005E8F16 /* miyashita-2.1.10.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A9C3595C20511379004363B4 /* Project object */ = {
+		A9571FE620565F79005E8F16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Ryosuke_Miyashita;
 				TargetAttributes = {
-					A97FD38A20526E20009ADC98 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					A9C3596320511379004363B4 = {
+					A9571FED20565F79005E8F16 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A9C3595F20511379004363B4 /* Build configuration list for PBXProject "miyashita-2.1.10" */;
+			buildConfigurationList = A9571FE920565F79005E8F16 /* Build configuration list for PBXProject "miyashita-2.1.10" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,73 +122,57 @@
 				en,
 				Base,
 			);
-			mainGroup = A9C3595B20511379004363B4;
-			productRefGroup = A9C3596520511379004363B4 /* Products */;
+			mainGroup = A9571FE520565F79005E8F16;
+			productRefGroup = A9571FEF20565F79005E8F16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9C3596320511379004363B4 /* miyashita-2.1.10 */,
-				A97FD38A20526E20009ADC98 /* OCLint */,
+				A9571FED20565F79005E8F16 /* miyashita-2.1.10 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A9C3596220511379004363B4 /* Resources */ = {
+		A9571FEC20565F79005E8F16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C3597420511379004363B4 /* LaunchScreen.storyboard in Resources */,
-				A9C3597120511379004363B4 /* Assets.xcassets in Resources */,
-				A9C35983205134E3004363B4 /* Property List.plist in Resources */,
-				A9C3596F20511379004363B4 /* Main.storyboard in Resources */,
+				A9571FFE20565F79005E8F16 /* LaunchScreen.storyboard in Resources */,
+				A9571FFB20565F79005E8F16 /* Assets.xcassets in Resources */,
+				A957200B205663BD005E8F16 /* Property List.plist in Resources */,
+				A9571FF920565F79005E8F16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A97FD38E20526E32009ADC98 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "PROJECT=miyashita-2.1.10\nSCHEME=${PROJECT}\n\nXCTOOL=/usr/local/bin\nexport PATH=$XCTOOL:$PATH\nOCLINT_HOME=/usr/local/oclint-0.13\nexport PATH=$OCLINT_HOME/bin:$PATH\n\nxctool -project ${SRCROOT}/${PROJECT}.xcodeproj -scheme ${SCHEME} -reporter json-compilation-database:compile_commands.json clean\nxctool -project ${SRCROOT}/${PROJECT}.xcodeproj -scheme ${SCHEME} -reporter json-compilation-database:compile_commands.json build\n\noclint-json-compilation-database | sed 's/\\(.*\\.\\m\\{1,2\\}:[0-9]*:[0-9]*:\\)/\\1 warning:/'";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A9C3596020511379004363B4 /* Sources */ = {
+		A9571FEA20565F79005E8F16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C3596C20511379004363B4 /* ViewController.m in Sources */,
-				A9C3597720511379004363B4 /* main.m in Sources */,
-				A9C3596920511379004363B4 /* AppDelegate.m in Sources */,
+				A9571FF620565F79005E8F16 /* ViewController.m in Sources */,
+				A957200120565F79005E8F16 /* main.m in Sources */,
+				A95720092056605E005E8F16 /* CustomTableViewCell.m in Sources */,
+				A9571FF320565F79005E8F16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A9C3596D20511379004363B4 /* Main.storyboard */ = {
+		A9571FF720565F79005E8F16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A9C3596E20511379004363B4 /* Base */,
+				A9571FF820565F79005E8F16 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A9C3597220511379004363B4 /* LaunchScreen.storyboard */ = {
+		A9571FFC20565F79005E8F16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A9C3597320511379004363B4 /* Base */,
+				A9571FFD20565F79005E8F16 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -209,25 +180,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A97FD38B20526E21009ADC98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WLWT47KH8L;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A97FD38C20526E21009ADC98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WLWT47KH8L;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A9C3597820511379004363B4 /* Debug */ = {
+		A957200220565F79005E8F16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		A9C3597920511379004363B4 /* Release */ = {
+		A957200320565F79005E8F16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,7 +284,7 @@
 			};
 			name = Release;
 		};
-		A9C3597B20511379004363B4 /* Debug */ = {
+		A957200520565F79005E8F16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -345,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		A9C3597C20511379004363B4 /* Release */ = {
+		A957200620565F79005E8F16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -362,34 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A97FD38D20526E21009ADC98 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+		A9571FE920565F79005E8F16 /* Build configuration list for PBXProject "miyashita-2.1.10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A97FD38B20526E21009ADC98 /* Debug */,
-				A97FD38C20526E21009ADC98 /* Release */,
+				A957200220565F79005E8F16 /* Debug */,
+				A957200320565F79005E8F16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9C3595F20511379004363B4 /* Build configuration list for PBXProject "miyashita-2.1.10" */ = {
+		A957200420565F79005E8F16 /* Build configuration list for PBXNativeTarget "miyashita-2.1.10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9C3597820511379004363B4 /* Debug */,
-				A9C3597920511379004363B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9C3597A20511379004363B4 /* Build configuration list for PBXNativeTarget "miyashita-2.1.10" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9C3597B20511379004363B4 /* Debug */,
-				A9C3597C20511379004363B4 /* Release */,
+				A957200520565F79005E8F16 /* Debug */,
+				A957200620565F79005E8F16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A9C3595C20511379004363B4 /* Project object */;
+	rootObject = A9571FE620565F79005E8F16 /* Project object */;
 }
