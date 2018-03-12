@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Reel</key>
+	<array>
+		<string>ANTARES</string>
+		<string>ANTAM MGL</string>
+		<string>METANIUM MGL</string>
+	</array>
+	<key>Rod</key>
+	<array>
+		<string>WORLD SHAULA</string>
+		<string>POIZON GRORIOUS</string>
+		<string>EXPRIDE</string>
+	</array>
+</dict>
+</plist>
