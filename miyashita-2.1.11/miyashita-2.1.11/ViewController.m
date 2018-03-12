@@ -41,6 +41,9 @@ typedef NS_ENUM(NSUInteger,Class) {
     
     self.imgName=@[@"Image-0",@"Image-1",@"Image-2",
                        @"Image-3",@"Image-4",@"Image-5"];
+    
+    //self.tableView.estimatedRowHeight = 450;
+   // self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
