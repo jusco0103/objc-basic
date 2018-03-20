@@ -10,9 +10,11 @@
 		A970DD3520576D4B007EFEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A970DD3420576D4B007EFEA6 /* AppDelegate.m */; };
 		A970DD3820576D4B007EFEA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970DD3720576D4B007EFEA6 /* ViewController.m */; };
 		A970DD3B20576D4B007EFEA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A970DD3920576D4B007EFEA6 /* Main.storyboard */; };
-		A970DD3D20576D4B007EFEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A970DD3C20576D4B007EFEA6 /* Assets.xcassets */; };
 		A970DD4020576D4B007EFEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A970DD3E20576D4B007EFEA6 /* LaunchScreen.storyboard */; };
 		A970DD4320576D4B007EFEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A970DD4220576D4B007EFEA6 /* main.m */; };
+		A9BAC4DA2060FF4D00590B06 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC4D92060FF4D00590B06 /* CustomTableViewCell.m */; };
+		A9BAC4DC2061034400590B06 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9BAC4DB2061034300590B06 /* Property List.plist */; };
+		A9BAC4DE2061034B00590B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BAC4DD2061034B00590B06 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +24,13 @@
 		A970DD3620576D4B007EFEA6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A970DD3720576D4B007EFEA6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A970DD3A20576D4B007EFEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A970DD3C20576D4B007EFEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A970DD3F20576D4B007EFEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A970DD4120576D4B007EFEA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A970DD4220576D4B007EFEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9BAC4D82060FF4D00590B06 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		A9BAC4D92060FF4D00590B06 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		A9BAC4DB2061034300590B06 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		A9BAC4DD2061034B00590B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,17 @@
 		A970DD3220576D4B007EFEA6 /* miyashita-2.1.14 */ = {
 			isa = PBXGroup;
 			children = (
+				A9BAC4DD2061034B00590B06 /* Assets.xcassets */,
+				A9BAC4D82060FF4D00590B06 /* CustomTableViewCell.h */,
+				A9BAC4D92060FF4D00590B06 /* CustomTableViewCell.m */,
 				A970DD3320576D4B007EFEA6 /* AppDelegate.h */,
 				A970DD3420576D4B007EFEA6 /* AppDelegate.m */,
 				A970DD3620576D4B007EFEA6 /* ViewController.h */,
 				A970DD3720576D4B007EFEA6 /* ViewController.m */,
 				A970DD3920576D4B007EFEA6 /* Main.storyboard */,
-				A970DD3C20576D4B007EFEA6 /* Assets.xcassets */,
 				A970DD3E20576D4B007EFEA6 /* LaunchScreen.storyboard */,
 				A970DD4120576D4B007EFEA6 /* Info.plist */,
+				A9BAC4DB2061034300590B06 /* Property List.plist */,
 				A970DD4220576D4B007EFEA6 /* main.m */,
 			);
 			path = "miyashita-2.1.14";
@@ -129,8 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BAC4DC2061034400590B06 /* Property List.plist in Resources */,
 				A970DD4020576D4B007EFEA6 /* LaunchScreen.storyboard in Resources */,
-				A970DD3D20576D4B007EFEA6 /* Assets.xcassets in Resources */,
+				A9BAC4DE2061034B00590B06 /* Assets.xcassets in Resources */,
 				A970DD3B20576D4B007EFEA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +153,7 @@
 			files = (
 				A970DD3820576D4B007EFEA6 /* ViewController.m in Sources */,
 				A970DD4320576D4B007EFEA6 /* main.m in Sources */,
+				A9BAC4DA2060FF4D00590B06 /* CustomTableViewCell.m in Sources */,
 				A970DD3520576D4B007EFEA6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
