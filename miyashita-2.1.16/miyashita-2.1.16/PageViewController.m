@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupPageviewController];
 
 }
 
@@ -33,7 +34,7 @@
     self.dataSource=self;
     
     // pageViewで管理するViewControllerのIDを格納する
-    self.viewList = @[@"ViewController",
+    self.viewList = @[@"FirstViewController",
                       @"SecondViewController",
                       @"ThirdViewController"];
     
@@ -80,19 +81,21 @@
     // 現在表示しているUIViewControllerのタグを取得
     self.viewControllerIndex = (int)viewController.view.tag;
     
-    //
-    if((self.viewControllerIndex> self.viewList.count ||  self.viewControllerIndex==NSNotFound)){
-        return nil;
-    }
-    
     // タグNoを+1してIndexに格納する
     self.viewControllerIndex++;
     
-    // 表示しているUIViewControllerにタグ番号を振る。
-    self.viewController.view.tag = self.viewControllerIndex;
+    //
+    if((self.viewControllerIndex >= self.viewList.count ||  self.viewControllerIndex == NSNotFound)){
+        return nil;
+    }
     
     // 現在のIndex番号にあったUIViewControllerをviewControllerに格納する
     self.viewController = [self.storyboard instantiateViewControllerWithIdentifier:self.viewList[self.viewControllerIndex]];
+
+    // 表示しているUIViewControllerにタグ番号を振る。
+    self.viewController.view.tag = self.viewControllerIndex;
+    
+
     
     //現在のviewControllerを表示する
     return self.viewController;
