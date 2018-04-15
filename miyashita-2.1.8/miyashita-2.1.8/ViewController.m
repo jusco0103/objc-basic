@@ -26,9 +26,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController (){
-    NSArray *_picaData;
-}
+@interface ViewController ()
+
+@property NSArray *picaData;
+@property (weak, nonatomic) IBOutlet UILabel *picaLabel;
+@property (weak, nonatomic) IBOutlet UIPickerView *pica;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 
 @end
 
@@ -38,12 +41,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //Labelのタッチ検知を有効にする
-    _picaLabel.userInteractionEnabled=YES;
+    self.picaLabel.userInteractionEnabled=YES;
     //Label,Buttonにタグ付けする（UIPickerViewの表示/非表示の条件にするため）
-    _picaLabel.tag=1;
+    self.picaLabel.tag=1;
     
     //picaDataを初期化
-    _picaData=@[@"Item1",@"Item2",@"Item3",@"Item4",@"Item5"];
+    self.picaData=@[@"Item1",@"Item2",@"Item3",@"Item4",@"Item5"];
     
     //UIPickerViewにdataSource、delegateを接続
     self.pica.dataSource=self;
@@ -57,12 +60,12 @@
     //UIPickerViewを表示/非表示にする条件分岐
     switch(touch.view.tag){
         case 0:
-            _pica.hidden=YES;
-            _toolBar.hidden=YES;
+            self.pica.hidden=YES;
+            self.toolBar.hidden=YES;
             break;
         case 1:
-            _pica.hidden=NO;
-            _toolBar.hidden=NO;
+            self.pica.hidden=NO;
+            self.toolBar.hidden=NO;
             break;
         default:
             break;
@@ -70,8 +73,8 @@
 }
 
 - (IBAction)doneButtonPush:(UIBarButtonItem *)sender {
-    _pica.hidden=YES;
-    _toolBar.hidden=YES;
+    self.pica.hidden=YES;
+    self.toolBar.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,17 +90,17 @@
 
 //UIPickerView内のデータ行数を決定
 - (NSInteger)pickerView:(nonnull UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return _picaData.count;
+    return self.picaData.count;
 }
 
 //UIPickerView内のデータ内容を決定
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return _picaData[row];
+    return self.picaData[row];
 }
 //UIPickerViewの値をLabelに代入する
 //選択されたUIPickerViewの値を取得
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    _picaLabel.text=_picaData[row];
+    self.picaLabel.text=self.picaData[row];
 }
 
 @end

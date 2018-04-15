@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *picaLabel;
-@property (weak, nonatomic) IBOutlet UIPickerView *pica;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 
 @end
 
