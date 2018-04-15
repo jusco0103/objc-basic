@@ -16,6 +16,10 @@ Doneボタンを押下すると、UIDatePickerViewを非表示にする。
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *dpLabel;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
 @end
 
 @implementation ViewController
@@ -33,12 +37,12 @@ Doneボタンを押下すると、UIDatePickerViewを非表示にする。
 
     UITouch *touch=[touches anyObject];
     if(touch.view.tag==0){
-        _datePicker.hidden=YES;
-        _toolBar.hidden=YES;
+        self.datePicker.hidden=YES;
+        self.toolBar.hidden=YES;
     }
     else{
-        _datePicker.hidden=NO;
-        _toolBar.hidden=NO;
+        self.datePicker.hidden=NO;
+        self.toolBar.hidden=NO;
     }
 }
 //UILabelにUIDatePickweViewの値を反映
@@ -48,12 +52,12 @@ Doneボタンを押下すると、UIDatePickerViewを非表示にする。
     //dfの形式をMM月dd日 HH時mm分にする
     df.dateFormat=@"MM月dd日 HH時mm分";
     //dpLabelにdatepickerの日付を格納する
-    _dpLabel.text=[df stringFromDate:_datePicker.date];
+    self.dpLabel.text=[df stringFromDate:self.datePicker.date];
 }
 
 - (IBAction)DoneButtonPushed:(id)sender {
-    _datePicker.hidden=YES;
-    _toolBar.hidden=YES;
+    self.datePicker.hidden=YES;
+    self.toolBar.hidden=YES;
 }
 
 - (void)didReceiveMemoryWarning {
