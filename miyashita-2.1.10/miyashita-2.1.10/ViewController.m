@@ -7,59 +7,65 @@
 //
 
 #import "ViewController.h"
-#import "CustomTableViewCell.h"
 
-@interface ViewController ()
-@property(strong,nonatomic)NSArray *Images;
-@property(strong,nonatomic)NSArray *titles;
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property(strong,nonatomic)NSArray *name;
+@property(strong,nonatomic)NSArray *descript;
+@property(strong,nonatomic)NSArray *image;
 
 @end
 
 @implementation ViewController
 
+//TableViewの高さを調整する
 - (void)viewDidLoad {
+    [self storePlist];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
-
-    //NSBundleを取得
-    NSBundle *bundle=[NSBundle mainBundle];
-    //pathにProperty List.plistを指定
-    NSString *path=[bundle pathForResource:@"Property List" ofType:@"plist"];
-    //plistの内容をdicに格納
-    NSDictionary *dic=[NSDictionary dictionaryWithContentsOfFile:path];
-    //text,imageそれぞれにdicのキーを元にデータを格納
-    NSArray *titles=[dic objectForKey:@"text"];
-    NSArray *images=[dic objectForKey:@"image"];
-    //最初に宣言したImage,Textに格納
-    _Images=images;
-    _titles=titles;
-    
-    
-    
+    self.myTableView.estimatedRowHeight = 400;
+    self.myTableView.rowHeight = UITableViewAutomaticDimension;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//データの数をreturnする。Imagesの数と同じ。
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return _Images.count;
+
+//TackleList.plistの値を変数に格納する
+- (void)storePlist {
+    // tacklesにplistの値を格納
+    NSArray *tackles = [[NSArray alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"TackleList" ofType:@"plist"]];
+    
+    self.name = [tackles valueForKey:@"name"];
+    
+    self.descript = [tackles valueForKey:@"description"];
+    
+    self.image = [tackles valueForKey:@"image"];
+
 }
 
-//データの内容をreturn、Images、titleのインデックスを指定して格納
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    CustomTableViewCell *cell=(CustomTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    //    cell.imagesView.layer.masksToBounds = YES;
-    cell.imagesView.image = [UIImage imageNamed:_Images[indexPath.row]];
-    cell.titles.text=_titles[indexPath.row];
-    
+//セクションの数を定義する
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.name.count;
+}
+
+//TableViewCellの中身を定義する
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [self.myTableView dequeueReusableCellWithIdentifier:@"MyCell" forIndexPath:indexPath];
+//画像を配置する
+    NSString *imageName = self.image[indexPath.row];
+    UIImage *img = [UIImage imageNamed:imageName];
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
+    imageView.image = img;
+//タイトル文字を配置する
+    UILabel *titles = (UILabel *)[cell viewWithTag:2];
+    titles.text = self.name[indexPath.row];
+//説明文を配置する
+    UILabel *description = (UILabel *)[cell viewWithTag:3];
+    description.text = self.descript[indexPath.row];
+
     return cell;
 }
 

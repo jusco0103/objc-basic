@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
+- (void)storePlist;
 
 @end
 
